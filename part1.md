@@ -1,23 +1,30 @@
-## 阶段一：环境与依赖搭建
+# 成果汇报：Unsloth 及相关依赖包安装
 
-- 目标：
-  - 搭建稳定、高效的Notebook开发与实验环境。
-  - 安装并校验核心依赖包（`unsloth`、`bitsandbytes`、`unsloth_zoo`等）。
-- 主要成果：
-  - 在Jupyter Notebook中完成环境初始化，采用命令输出隐藏技术（`%%capture`）提升可读性。
-  - 通过pip自动化脚本，确保依赖始终为最新版，避免兼容性问题。
-  - 检查NVIDIA驱动与CUDA环境，确认GPU可用，为后续大模型推理和训练做好准备。
-- 代码：
- # 安装 unsloth 包。unsloth 是一个用于微调大型语言模型（LLM）的工具，可以让模型运行更快、占用更少内存。
-!pip install unsloth
+本次环境配置旨在为大型语言模型（LLM）的微调提供高效、低内存占用的支持，具体操作及成果如下：
 
-# 卸载当前已安装的 unsloth 包（如果已安装），然后从 GitHub 的源代码安装最新版本。
-# 这样可以确保我们使用的是最新功能和修复。
-!pip uninstall unsloth -y && pip install --upgrade --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git
+## 1. 安装 Unsloth
 
-# 安装 bitsandbytes 和 unsloth_zoo 包。
-# bitsandbytes 是一个用于量化和优化模型的库，可以帮助减少模型占用的内存。
-# unsloth_zoo 可能包含了一些预训练模型或其他工具，方便我们使用。
-!pip install bitsandbytes unsloth_zoo
-- 展示运行结果：
-  
+- 通过 `pip install unsloth` 成功安装了 Unsloth 包，为微调 LLM 提供了高性能支持。
+- Unsloth 的优势在于优化了训练速度和内存占用，适合大模型微调场景。
+
+## 2. 从 GitHub 源码安装最新版 Unsloth
+
+- 先卸载了当前环境中的 Unsloth 包，确保没有版本冲突。
+- 通过如下命令从 GitHub 获取并安装了 Unsloth 的最新开发版：
+  ```bash
+  pip uninstall unsloth -y && pip install --upgrade --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git
+  ```
+- 这样确保使用了最新的功能与 bug 修复，提高了后续开发与调试的灵活性。
+
+## 3. 安装 bitsandbytes 与 unsloth_zoo
+
+- 成功安装了 `bitsandbytes` 和 `unsloth_zoo` 两个包：
+  - `bitsandbytes`：用于模型参数的8位量化与高效显存管理，有效降低了大模型的显存需求。
+  - `unsloth_zoo`：提供了丰富的预训练模型和实用工具，便于快速开展模型微调工作。
+## 4. 运行结果
+
+## 总结
+
+通过上述操作，当前环境已具备以 Unsloth 为核心的高效 LLM 微调能力，并兼容最新特性及相关依赖。后续可直接进行大模型的量化、加载和微调实验。
+
+如有进一步的模型训练或优化需求，可基于当前环境无缝开展。
