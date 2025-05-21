@@ -31,3 +31,6 @@
 ## 6.代码截图
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+## 7.运行结果
+![alt text](image-5.png)
+![alt text](image-6.png)
