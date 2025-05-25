@@ -42,6 +42,7 @@
 - 训练日志实时输出，便于监控损失、学习率等指标变化。
 - 训练结果及模型参数保存在指定目录，便于后续推理和评估。
 ![7a4a8eca2e0c77b21f003d12e64cc2fb](https://github.com/user-attachments/assets/c727e60a-bfb7-4bc4-be92-8b52caf945e5)
+![image](https://github.com/user-attachments/assets/3bc810b5-9e4e-4adb-b68d-369abfef2d2d)
 ![17f60aef7c83dbb55465096a4d1faf57](https://github.com/user-attachments/assets/84fa1bf0-e4b3-4969-86e4-ef53c93c10cf)
 
 ---
