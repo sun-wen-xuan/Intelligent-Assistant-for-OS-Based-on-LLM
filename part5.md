@@ -42,7 +42,5 @@
 
 ## 6.运行结果
 - ![image](https://github.com/user-attachments/assets/71595d2f-5520-425f-b343-b36d4a54bd4d)
-
-- ![alt text](image-9.png)
-
+- ![image](https://github.com/user-attachments/assets/8d4c6e79-5eda-4c8d-a8d2-0d61fff89b69)
 本实验为操作系统领域大模型微调提供了高质量、结构化的训练数据处理范式，为后续模型训练和产业级智能问答系统实现提供了重要保障。
