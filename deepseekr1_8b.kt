@@ -82,16 +82,16 @@ EOS_TOKEN = tokenizer.eos_token  # 必须添加结束标记
 
 # 导入数据集加载函数
 from datasets import load_dataset
-# 加载指定的数据集，选择操作系统领域相关的中文问答数据（假设数据集名为 os-qa，需提前准备好）
-dataset = load_dataset("Conard/os-qa", 'default', split = "train[0:200]", trust_remote_code=True)
+# 加载指定的数据集，选择操作系统领域相关的中文问答数据
+dataset = load_dataset("sapphire1234/os-qa", 'default', split = "train[0:2480]", trust_remote_code=True)
 # 打印数据集的列名，查看数据集中有哪些字段
 print(dataset.column_names)
 # 定义一个函数，用于格式化数据集中的每条记录
 def formatting_prompts_func(examples):
     # 从数据集中提取问题、复杂思考过程和回答
-    inputs = examples["Question"]
-    cots = examples["Complex_CoT"]
-    outputs = examples["Response"]
+    inputs = examples["instruction"]
+    cots = examples["input"]
+    outputs = examples["output"]
     texts = []  # 用于存储格式化后的文本
     # 遍历每个问题、思考过程和回答，进行格式化
     for input, cot, output in zip(inputs, cots, outputs):
@@ -172,7 +172,7 @@ print(response[0])
 from google.colab import userdata
 
 # 从 Google Colab 用户数据中获取 Hugging Face 的 API 令牌
-HUGGINGFACE_TOKEN = userdata.get('HUGGINGFACE_TOKEN')
+HUGGINGFACE_TOKEN = userdata.get('Chawen')
 
 # 将模型保存为 8 位量化格式（Q8_0）
 # 这种格式文件小且运行快，适合部署到资源受限的设备
@@ -189,7 +189,7 @@ if False: model.save_pretrained_gguf("model", tokenizer, quantization_method = "
 from huggingface_hub import create_repo
 
 # 在 Hugging Face Hub 上创建一个新的模型仓库
-create_repo("Conard/os-llm-qa", token=HUGGINGFACE_TOKEN, exist_ok=True)
+create_repo("Chawen/os",  token=HUGGINGFACE_TOKEN, exist_ok=True)
 
 # 将模型和分词器上传到 Hugging Face Hub 上的仓库
-model.push_to_hub_gguf("Conard/os-llm-qa", tokenizer, token=HUGGINGFACE_TOKEN)
+model.push_to_hub_gguf("Chawen/os",tokenizer, token=HUGGINGFACE_TOKEN)
