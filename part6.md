@@ -16,7 +16,6 @@
     - 启用 `use_gradient_checkpointing='unsloth'`，大幅降低训练显存需求。
     - 随机种子 `random_state=3407`，确保实验可复现。
     - 其余参数设置有效防止过拟合并保障训练稳定。
-![6000e9d4fcc438c0978e1703db712fb1](https://github.com/user-attachments/assets/53736ead-682f-45f8-a98c-dfe4fa2108e9)
 
 ---
 
@@ -42,7 +41,6 @@
 - 调用 `trainer.train()` 启动训练，记录并返回训练过程统计信息（`trainer_stats`）。
 - 训练日志实时输出，便于监控损失、学习率等指标变化。
 - 训练结果及模型参数保存在指定目录，便于后续推理和评估。
-![8c2836b33ea20adfff1455ecd24fc7dc](https://github.com/user-attachments/assets/f0a7fe78-3863-4d24-8530-9c44846ecb94)
 ![7a4a8eca2e0c77b21f003d12e64cc2fb](https://github.com/user-attachments/assets/c727e60a-bfb7-4bc4-be92-8b52caf945e5)
 ![17f60aef7c83dbb55465096a4d1faf57](https://github.com/user-attachments/assets/84fa1bf0-e4b3-4969-86e4-ef53c93c10cf)
 
