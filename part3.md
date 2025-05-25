@@ -29,8 +29,8 @@
 - 可结合输出结果自动评测，实现更智能的答案筛选与优化。
 
 ## 6.代码截图
-![alt text](image-2.png)
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/3f928422-082c-45ff-be3d-5ae73e638a60)
+![image](https://github.com/user-attachments/assets/9ed5f58c-7d79-48ff-87aa-a5cbfb251cf0)
 ## 7.运行结果
 - <｜begin▁of▁sentence｜>以下是描述任务的指令，以及提供进一步上下文的输入。
 请写出一个适当完成请求的回答。
