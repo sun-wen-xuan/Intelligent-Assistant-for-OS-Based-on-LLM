@@ -7,17 +7,17 @@
 ## 二、主要工作内容
 
 1. **数据收集与整理**
-   - 根据项目需求，收集了相关的原始数据（如文本、图片等）。
+   - 根据项目需求，收集了相关的原始文献。
    - 对原始数据进行了清洗、去重、格式化等预处理操作，确保数据质量。
 
 2. **数据集格式转换**
-   - 按照 Hugging Face datasets 库的要求，将数据整理为标准的 JSON、CSV、Parquet 等格式，并编写了 `dataset_info.json` 等元数据文件。
+   - 将原始文本处理为结构化的QA数据。
+   - 按照 Hugging Face datasets 库的要求，将数据整理为标准的 JSON 格式，并编写了 `dataset_info.json` 等元数据文件。
    - 设计了合适的字段（如 text, label, image 等），保证数据结构清晰、一致。
 
 3. **数据集上传与发布**
    - 注册并登录 Hugging Face 账号，创建新的 Dataset 仓库。
    - 使用 `datasets` 库的 `load_dataset`、`push_to_hub` 等 API，将数据集上传到 Hugging Face Hub。
-   - 编写了详细的 README，包括数据集简介、用途、字段说明、引用方式、许可证等内容。
    - 成功完成数据集的公开发布，获得 DOI 和 Hugging Face 官方链接。
 
 
