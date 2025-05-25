@@ -26,6 +26,6 @@
 
 本次成果为后续大语言模型的开发与应用奠定了坚实的基础。
 ## 6.代码截图
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/6527796b-25b7-4f52-a27d-6bd21cc65521)
 ## 7.运行结果
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/0074d1d2-ca69-4a73-9d1e-b1b03bcdd482)

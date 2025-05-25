@@ -22,7 +22,7 @@
   - `bitsandbytes`：用于模型参数的8位量化与高效显存管理，有效降低了大模型的显存需求。
   - `unsloth_zoo`：提供了丰富的预训练模型和实用工具，便于快速开展模型微调工作。
 ## 4. 运行结果（部分展示）
-![alt text](image-7.png)
+![image](https://github.com/user-attachments/assets/d2a0544d-de1c-4932-bf6a-0083476adfb1)
 ## 总结
 
 通过上述操作，当前环境已具备以 Unsloth 为核心的高效 LLM 微调能力，并兼容最新特性及相关依赖。后续可直接进行大模型的量化、加载和微调实验。
