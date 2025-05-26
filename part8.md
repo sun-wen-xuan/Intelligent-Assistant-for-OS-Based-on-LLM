@@ -43,7 +43,13 @@
 
 ---
 
-## 4. 后续建议
+## 4. 运行结果
+![image](https://github.com/user-attachments/assets/83f89c65-5587-4f6f-b85f-c63b20cb9e63)
+![image](https://github.com/user-attachments/assets/c98f6326-f00e-4006-b0fc-04b819243eb0)
+![image](https://github.com/user-attachments/assets/779b8d36-47f1-411c-a323-6451eb6c10a7)
+
+
+## 5. 后续建议
 
 - 可根据实际推理需求，选择合适的量化格式进行部署与测试，权衡模型大小与推理精度。
 - 可进一步测试不同量化文件在不同平台上的运行速度和输出效果，优化部署策略。
