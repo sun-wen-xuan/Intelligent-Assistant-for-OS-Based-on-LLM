@@ -28,7 +28,15 @@
 
 ---
 
-## 4. 后续建议
+## 4. 运行结果
+![image](https://github.com/user-attachments/assets/1d936c99-6217-4938-b97d-b493a97aceb2)
+![image](https://github.com/user-attachments/assets/e85b6f0d-ad5a-4923-a9ee-de746895bc76)
+![image](https://github.com/user-attachments/assets/6cfabebd-fba3-400b-b6c8-267370c7ce83)
+
+
+
+
+## 5. 后续建议
 
 - 可为仓库补充 README、模型卡、推理及微调示例，使其他用户更易理解和使用模型。
 - 可根据模型实际应用需求，持续更新和维护模型版本。
